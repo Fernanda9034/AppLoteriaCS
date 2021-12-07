@@ -20,13 +20,11 @@ namespace AppLoteriaCS
         //int aux;
         //int[,] tabla = new int[5, 5];
         //int[] carta = new int[54];
-        //private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pictureBox;
         // 1 arreglo de imagene para la tabla
         private PictureBox [] tarjetas;
         private PictureBox[] tablas;
       
-
-
         public Form1()
         {
             InitializeComponent();
@@ -35,21 +33,22 @@ namespace AppLoteriaCS
             tablas = new PictureBox[25];
             inicializarTabla();
         }
-
+    
         // 3 arreglo imagenes declararlo
         private void inicializarTabla()
         {
             int r = 0, c = 0; 
-            for (int i = 0; i < tablas.Length; i++)
+            for (int i
+                = 0; i < tablas.Length; i++)
             {
                 tablas[i] = new PictureBox();
                 tablas[i].Location = new System.Drawing.Point(100 + (c * 90), 25 + (r * 125));
                 tablas[i].Name = "ImagenTabla" + i;
                 tablas[i].Size = new System.Drawing.Size(85,120); //tamaño de la imagen
-                tablas[i].TabIndex = 0 + i;
+                tablas[i].TabIndex = 0+i;
                 tablas[i].SizeMode = PictureBoxSizeMode.StretchImage;
                 tablas[i].TabStop = false;
-                tablas[i].Image = Image.FromFile(@"tarjetas\" + (i + 1) + ".png");        //aun no funciona
+                tablas[i].Image = Image.FromFile(@"tarjetas\"+(i+1)+".png");        //aun no funciona
                 this.Controls.Add(tablas[i]);
                 c++;
                 if (c==5)
