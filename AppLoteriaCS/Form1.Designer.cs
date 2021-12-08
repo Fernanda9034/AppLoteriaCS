@@ -40,7 +40,6 @@ namespace AppLoteriaCS
             this.btnBarajear = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnbuenas = new System.Windows.Forms.Button();
-            this.btnTabla = new System.Windows.Forms.Button();
             this.GBCartas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarta)).BeginInit();
             this.GBHistorial.SuspendLayout();
@@ -50,7 +49,7 @@ namespace AppLoteriaCS
             // GBCartas
             // 
             this.GBCartas.Controls.Add(this.pbCarta);
-            this.GBCartas.Location = new System.Drawing.Point(12, 12);
+            this.GBCartas.Location = new System.Drawing.Point(573, 12);
             this.GBCartas.Name = "GBCartas";
             this.GBCartas.Size = new System.Drawing.Size(163, 189);
             this.GBCartas.TabIndex = 0;
@@ -88,7 +87,7 @@ namespace AppLoteriaCS
             // GBCRestantes
             // 
             this.GBCRestantes.Controls.Add(this.label1);
-            this.GBCRestantes.Location = new System.Drawing.Point(184, 12);
+            this.GBCRestantes.Location = new System.Drawing.Point(628, 216);
             this.GBCRestantes.Name = "GBCRestantes";
             this.GBCRestantes.Size = new System.Drawing.Size(108, 54);
             this.GBCRestantes.TabIndex = 2;
@@ -101,12 +100,12 @@ namespace AppLoteriaCS
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "-";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(61, 207);
+            this.btnSiguiente.Location = new System.Drawing.Point(580, 326);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 3;
@@ -132,7 +131,7 @@ namespace AppLoteriaCS
             // 
             // btnbuenas
             // 
-            this.btnbuenas.Location = new System.Drawing.Point(389, 430);
+            this.btnbuenas.Location = new System.Drawing.Point(684, 315);
             this.btnbuenas.Name = "btnbuenas";
             this.btnbuenas.Size = new System.Drawing.Size(212, 44);
             this.btnbuenas.TabIndex = 6;
@@ -140,22 +139,11 @@ namespace AppLoteriaCS
             this.btnbuenas.UseVisualStyleBackColor = true;
             this.btnbuenas.Click += new System.EventHandler(this.btnbuenas_Click);
             // 
-            // btnTabla
-            // 
-            this.btnTabla.Location = new System.Drawing.Point(12, 263);
-            this.btnTabla.Name = "btnTabla";
-            this.btnTabla.Size = new System.Drawing.Size(163, 27);
-            this.btnTabla.TabIndex = 7;
-            this.btnTabla.Text = "Generar tabla";
-            this.btnTabla.UseVisualStyleBackColor = true;
-            this.btnTabla.Click += new System.EventHandler(this.btnTabla_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 507);
-            this.Controls.Add(this.btnTabla);
             this.Controls.Add(this.btnbuenas);
             this.Controls.Add(this.btnBarajear);
             this.Controls.Add(this.btnSiguiente);
@@ -185,7 +173,6 @@ namespace AppLoteriaCS
         private System.Windows.Forms.Button btnBarajear;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnbuenas;
-        private System.Windows.Forms.Button btnTabla;
     }
 }
 
