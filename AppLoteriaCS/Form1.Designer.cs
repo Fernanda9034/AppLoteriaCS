@@ -40,16 +40,28 @@ namespace AppLoteriaCS
             this.btnBarajear = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnbuenas = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nUDTablas = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnCrear = new System.Windows.Forms.Button();
             this.GBCartas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarta)).BeginInit();
             this.GBHistorial.SuspendLayout();
             this.GBCRestantes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nUDTablas)).BeginInit();
             this.SuspendLayout();
             // 
             // GBCartas
             // 
             this.GBCartas.Controls.Add(this.pbCarta);
-            this.GBCartas.Location = new System.Drawing.Point(573, 12);
+            this.GBCartas.Location = new System.Drawing.Point(674, 165);
             this.GBCartas.Name = "GBCartas";
             this.GBCartas.Size = new System.Drawing.Size(163, 189);
             this.GBCartas.TabIndex = 0;
@@ -68,7 +80,7 @@ namespace AppLoteriaCS
             // GBHistorial
             // 
             this.GBHistorial.Controls.Add(this.listView1);
-            this.GBHistorial.Location = new System.Drawing.Point(759, 12);
+            this.GBHistorial.Location = new System.Drawing.Point(872, 99);
             this.GBHistorial.Name = "GBHistorial";
             this.GBHistorial.Size = new System.Drawing.Size(143, 216);
             this.GBHistorial.TabIndex = 1;
@@ -87,7 +99,7 @@ namespace AppLoteriaCS
             // GBCRestantes
             // 
             this.GBCRestantes.Controls.Add(this.label1);
-            this.GBCRestantes.Location = new System.Drawing.Point(628, 216);
+            this.GBCRestantes.Location = new System.Drawing.Point(706, 99);
             this.GBCRestantes.Name = "GBCRestantes";
             this.GBCRestantes.Size = new System.Drawing.Size(108, 54);
             this.GBCRestantes.TabIndex = 2;
@@ -98,16 +110,16 @@ namespace AppLoteriaCS
             // 
             this.label1.Location = new System.Drawing.Point(7, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 32);
+            this.label1.Size = new System.Drawing.Size(95, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "-";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(580, 326);
+            this.btnSiguiente.Location = new System.Drawing.Point(674, 372);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguiente.Size = new System.Drawing.Size(157, 23);
             this.btnSiguiente.TabIndex = 3;
             this.btnSiguiente.Text = "Siguiente Carta";
             this.btnSiguiente.UseVisualStyleBackColor = true;
@@ -115,7 +127,7 @@ namespace AppLoteriaCS
             // 
             // btnBarajear
             // 
-            this.btnBarajear.Location = new System.Drawing.Point(792, 234);
+            this.btnBarajear.Location = new System.Drawing.Point(954, 331);
             this.btnBarajear.Name = "btnBarajear";
             this.btnBarajear.Size = new System.Drawing.Size(75, 23);
             this.btnBarajear.TabIndex = 4;
@@ -131,7 +143,7 @@ namespace AppLoteriaCS
             // 
             // btnbuenas
             // 
-            this.btnbuenas.Location = new System.Drawing.Point(684, 315);
+            this.btnbuenas.Location = new System.Drawing.Point(817, 428);
             this.btnbuenas.Name = "btnbuenas";
             this.btnbuenas.Size = new System.Drawing.Size(212, 44);
             this.btnbuenas.TabIndex = 6;
@@ -139,11 +151,114 @@ namespace AppLoteriaCS
             this.btnbuenas.UseVisualStyleBackColor = true;
             this.btnbuenas.Click += new System.EventHandler(this.btnbuenas_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(973, 39);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(42, 20);
+            this.numericUpDown1.TabIndex = 7;
+            // 
+            // nUDTablas
+            // 
+            this.nUDTablas.Location = new System.Drawing.Point(911, 39);
+            this.nUDTablas.Name = "nUDTablas";
+            this.nUDTablas.Size = new System.Drawing.Size(42, 20);
+            this.nUDTablas.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(908, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Numero de NCP´s";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(648, 39);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(71, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "Acostado";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(648, 67);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(60, 17);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.Text = "Parado";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(734, 39);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(68, 17);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.Text = "Diagonal";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(734, 67);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(78, 17);
+            this.checkBox4.TabIndex = 13;
+            this.checkBox4.Text = "Polla chica";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(817, 39);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(85, 17);
+            this.checkBox5.TabIndex = 14;
+            this.checkBox5.Text = "Polla grande";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(726, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Elige la Jugada:";
+            // 
+            // btnCrear
+            // 
+            this.btnCrear.Location = new System.Drawing.Point(831, 65);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(112, 23);
+            this.btnCrear.TabIndex = 16;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 507);
+            this.ClientSize = new System.Drawing.Size(1041, 507);
+            this.Controls.Add(this.btnCrear);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nUDTablas);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnbuenas);
             this.Controls.Add(this.btnBarajear);
             this.Controls.Add(this.btnSiguiente);
@@ -157,7 +272,10 @@ namespace AppLoteriaCS
             ((System.ComponentModel.ISupportInitialize)(this.pbCarta)).EndInit();
             this.GBHistorial.ResumeLayout(false);
             this.GBCRestantes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nUDTablas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -173,6 +291,16 @@ namespace AppLoteriaCS
         private System.Windows.Forms.Button btnBarajear;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnbuenas;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nUDTablas;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCrear;
     }
 }
 
